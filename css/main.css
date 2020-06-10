@@ -23,65 +23,66 @@
 
 * {
     box-sizing: border-box;
-}
+  }
 
 body {
     margin: 0 auto;
     color: white;
+    font-size: 16px;
     font-family: Arial, Helvetica, sans-serif;
-    background: rgb(0, 0, 0);
-    
-}
+    background: rgb(0, 0, 0);   
+ }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+  h1 {
+    margin: 0;
+    margin-bottom: 0.5;
+    padding: 0;
+  }
+  h3 {
+    margin: 0;
+    padding: 0;
+  }
 
-body {
-  font-family: "Montserrat", sans-serif;
-  font-size: 16px;
-}
+  img {
+    display: block;
+    width: 100%;
+  }
+  /* utility */
+  .container {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    overflow: hidden;
+  }
 
-h1 {
-  margin: 0;
-  padding: 0;
-}
-h3 {
-  margin: 0;
-  padding: 0;
-}
+  .s-heading {
+    font-size: 1.3rem;
+    line-height: 1.1;
+    text-transform: uppercase;
+  }
 
-img {
-  display: block;
-  width: 100%;
-}
-/* utility */
-.container {
-  max-width: var(--max-width);
-  margin: 0 auto;
-  overflow: hidden;
-}
+  .l-heading {
+    font-size: 3rem;
+    line-height: 1.2;
+    height: 109px;
+  }
+  nav.transparent {
+    width: 100%;
+    height: 62px;
+    position: relative;
+    overflow: hidden;
+    background:transparent;
+    background-color:none;
+    border-color:transparent;
+    box-shadow:none;
+  }
 
-.s-heading {
-  font-size: 1.3rem;
-  line-height: 1.1;
-  text-transform: uppercase;
-}
 
-.l-heading {
-  font-size: 3rem;
-  line-height: 1.2;
-  height: 109px;
-}
-
-.showcase-mainpage {
-  color: #fff;
-  background-color: black;
-  position: relative;
-  height: 100vh;
-}
+  .showcase-mainpage {
+    color: #fff;
+    background-color: black;
+    position: relative;
+    height: 100vh;
+  }
 
 .showcase-mainpage::before {
   content: "";
@@ -120,14 +121,38 @@ input[type=text], select, textarea {
     resize: vertical;
   }
 
+#slogan {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding-bottom: 150px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  margin: 0; 
+}
+
+.slogan_header {
+    background-image: url("../images/landing.png");
+    min-height: 400px;
+    background-position: center;
+    margin-bottom: 30px;
+    position: relative;
+    position: sticky;
+    width: 100%;
+    height: 590px;
+    overflow: hidden;
+  } 
+
 #book_now_button {
-    background-color: red  ;
-    font-weight: normal;
+  background-color: red  ;
+  font-weight: normal;
 }
 
 
 #welcome_text {
-    padding-top: 10%;
+  padding-top: 5%;
+  padding-left: 5%;
 }
 
 /*new second slide show*/
@@ -136,7 +161,20 @@ input[type=text], select, textarea {
 }
 .mySlides1 {
     display: none;
+    filter: brightness(50%);
 }
+.mySlides2 img {
+  filter: brightness(50%);
+  min-height: 300px;
+  background-position: center;
+  margin-bottom: 30px;
+  position: absolute;
+  position: sticky;
+  width: 100%;
+  height: 500px;
+  overflow: hidden;  
+}
+
 
 /* Slideshow container */
 .slideshow-container {
@@ -253,6 +291,8 @@ input[type=text], select, textarea {
 #booking img {
     width: 100%;
     height: 500px;
+    filter: brightness(50%);
+
 }
 #booking span {
     font-size: large;

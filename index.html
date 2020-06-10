@@ -1,43 +1,39 @@
 <head>
     <title>LM Continental</title>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" type="text/css" href="css/materialize.css" />
-    <link rel="stylesheet" type="text/css" href="css/materialize.min.css" />
-    <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" type="text/css" href="css/materialize.css"/>
+    <link rel="stylesheet" type="text/css" href="css/materialize.min.css"/>
+    <link rel="stylesheet" type="text/css" href="css/main.css"/>
   </head>
 
   <body>
+	<div  class="slogan_header">
+		<!--beginning of nav bar-->
+		<nav class="transparent">
+			<div class="nav-wrapper">
+				<a href="#" class="brand-logo">LM continental</a>
+				<ul id="nav-mobile" class="right hide-on-med-and-down">
+					<li><a href="facilities.html">Facilities</a></li>
+					<li><a href="roomandrates.html">Rooms</a></li>
+					<li><a href="#">Offers</a></li>
+					<li><a href="#">About</a></li>
+					<li><a href="contact.html">Contact us</a></li>
+					<li><a class="waves-effect waves-light btn" id="book_now_button" href="#booking" >BOOK NOW</a></li>
+				</ul>
+			</div>
+		</nav>
+		<!--end of nav bar-->
 
-    <!--beginning of nav bar-->
-    <nav class="transparent">
-      <div class="nav-wrapper">
-        <a href="#" class="brand-logo">LM continental</a>
-        <ul id="nav-mobile" class="right hide-on-med-and-down">
-          <li><a href="facilities.html">Facilities</a></li>
-          <li><a href="roomandrates.html">Rooms</a></li>
-          <li><a href="#">Offers</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="contact.html">Contact us</a></li>
-          <a
-            class="waves-effect waves-light btn"
-            id="book_now_button"
-            href="#booking"
-            >BOOK NOW</a
-          >
-        </ul>
-      </div>
-    </nav>
-    <!--end of nav bar-->
-
-    <!-- Display Slogan **(FIx this to required possition)-->
-    <header class="slogan_header">
-      <div id="slogan">
-        <h1 class="l-heading">FEEL LIKE ROYALTY</h1>
-        <p class="lead"><span>HAVING A LUXURY STAY AT ITS CLIMAX</span></p>
-      </div>
-    </header>
-    <br />
+		<!-- Display Slogan -->
+		<header>
+		<div id="slogan">
+			<h1>FEEL LIKE ROYALTY</h1>
+			<p><span>HAVING A LUXURY STAY AT ITS CLIMAX</span></p>
+		</div>
+		</header>
+		<br />
+    </div>
     <!--Welcome corner-->
     <div class="row hotel_details">
       <div class="col s6 slideshow-container" id="slideshow1">
@@ -68,17 +64,34 @@
       </div>
     </div>
 
-    <!--Slogan Showcase-->
+    <!--bed Showcase-->
     <div class="slideshow-container">
       <div class="mySlides2 fade">
-        <img src="images/bed1.jpg" style="width: 100%;" />
+			<img src="images/bed1.jpg" style="width: 100%;" />
+			<div class="centered" align="center">
+				<h2>Deluxe Suite</h2>
+				<p style="font-size:medium; "><span>A night of suit Deluxe</span></p>
+				<a class="waves-effect waves-light btn" id="book_now_button" href="roomandrates.html">Details</a></li>
+			</div> 
       </div>
       <div class="mySlides2 fade">
-        <img src="images/bed2.jpg" style="width: 100%;" />
+			<img src="images/bed2.jpg" style="width: 100%;" />
+			<div class="centered" align="center">
+				<h2>Luxe Suite</h2>
+				<p style="font-size:medium; "><span>Your confort is our priority</span></p>
+				<a class="waves-effect waves-light btn" id="book_now_button" href="roomandrates.html">Details</a></li>
+			</div> 
       </div>
       <div class="mySlides2 fade">
-        <img src="images/bed3.jpg" style="width: 100%;" />
-      </div>
+			<img src="images/bed3.jpg" style="width: 100%;" />
+			<div class="centered" align="center">
+				<h2>Royalty Suite</h2>
+				<p style="font-size:medium; "><span>A night of suit royalty</span></p>
+				<a class="waves-effect waves-light btn" id="book_now_button" href="roomandrates.html">Details</a></li>
+			</div> 
+	  </div>
+	  <!--Text on Image
+	  <div class="centered">HELLO</div>-->
 
       <a class="prev" onclick="plusSlides(-1,1)">&#10094;</a>
       <a class="next" onclick="plusSlides(1,1)">&#10095;</a>
@@ -187,219 +200,49 @@
       <div class="centered">
         BE TREATED LIKE ROYALTY<br />
         <span>Have an unforgettable experience</span><br />
-        <a
-          class="waves-effect waves-light btn"
-          id="book_now_button"
-          href="#booking"
-          >BOOK NOW</a
-        >
+        <a class="waves-effect waves-light btn" id="book_now_button" href="#booking">BOOK NOW</a>
       </div>
-    </div>
+	</div>
+	
+        <!--beginning of footer-->
+        <footer class="page-footer">
+			<div class="container">
+			  <div class="row">
+				<div class="col s4">
+				  <ul>
+					<li><a class="white-text" href="#">ABOUT LM CONTINENTIAL</a></li>
+					<li><a class="white-text" href="#">FACILITIES</a></li>
+					<li><a class="white-text" href="#">HOTEL DEVELOPMENT</a></li>
+					<li><a class="white-text" href="#">EVENTS</a></li>
+				  </ul>
+				</div>
+				<div class="col s4">
+				  <ul>
+					<li><a class="white-text" href="#">PRIVACY POLICY</a></li>
+					<li><a class="white-text" href="#">TERMS & CONDITIONS</a></li>
+					<li><a class="white-text" href="#">CONTACT US</a></li>
+				  </ul>
+				</div>
+				<div class="col s4">
+					<p class="white-text"><b>FOLLOW US FOR OFFERS</b></p>
+					<ul>
+					  <li><a class="col s2 white-text" href="#"><img src="images/socialicons/twitter_icon.png" width="25px" height="25px"></a></li>
+					  <li><a class="col s2 white-text" href="#"><img src="images/socialicons/instagram_icon.png" width="25px" height="25px"></a></li>
+					  <li><a class="col s2 white-text" href="#"><img src="images/socialicons/facebook_icon.png" width="25px" height="25px"></a></li>
+					</ul>
+				</div>
+			  </div>
+			</div>
+			<div class="footer-copyright">
+			  <div class="container">
+				@COPYRIGHT  LM CONTINENTAL 2020
+			  </div>
+			</div>
+		  </footer>
+		  <!--end of footer-->
 
     <script type="text/javascript" src="js/main.js"></script>
   </body>
 
 </html>
 	
-=======
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>LM Continental</title>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" type="text/css" href="css/materialize.css" />
-    <link rel="stylesheet" type="text/css" href="css/materialize.min.css" />
-    <link rel="stylesheet" type="text/css" href="css/main.css" />
-  </head>
-
-  <body>
-    <!-- Showcase Section -->
-    <section class="showcase-mainpage">
-      <div class="container">
-          <!--beginning of nav bar-->
-          <nav class="transparent">
-            <div class="nav-wrapper">
-              <a href="index.html" class="brand-logo"><img src="images/LM_Continental.png" style="display: inline;"></a>
-              <ul id="nav-mobile" class="right">
-                  <li><a href="">Facilities</a></li>
-                  <li><a href="roomandrates.html">Rooms</a></li>
-                  <li><a href="">Offers</a></li>
-                  <li><a href="">About</a></li>
-                  <li><a href="contact.html">Contact Us</a></li>
-                  <a class="waves-effect waves-light btn" id="book_now_button">BOOK NOW</a>
-              </ul>
-            </div>
-          </nav>
-          <!--end of nav bar-->
-        <div class="showcase-container">
-          <div class="showcase-mainpage-page">
-            <h3 class="s-heading">HAVING A LUXURY STAY AT IT'S CLIMAX</h3>
-            <h1 class="l-heading">FEEL LIKE ROYALTY</h1>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!--Welcome corner-->
-      <div class="row hotel_details">
-        <div class="col s6 slideshow-container" id="slideshow1">
-          <div class="mySlides1">
-            <img src="images/outdoor1.jpeg" style="width: 100%;" />
-          </div>
-
-          <div class="mySlides1">
-            <img src="images/outdoor2.jpeg" style="width: 100%;" />
-          </div>
-
-          <div class="mySlides1">
-            <img src="images/outdoor3.jpeg" style="width: 100%;" />
-          </div>
-
-          <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
-          <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
-        </div>
-
-        <div class="col s6" id="welcome_text">
-          <h5>WELCOME TO LM CONTINENTAL</h5>
-          <h3>TAKING LUXURY TO ITS CLIMAX</h3>
-          <p>
-            We are here to provide you with the best of services a Hotel has to
-            offer to ensure and maximize saftey, comfort, pleasure and make you
-            feel like Royalty.
-          </p>
-        </div>
-      </div>
-
-    <!--Slogan Showcase-->
-    <div class="slideshow-container">
-      <div class="mySlides2 fade">
-        <img src="images/bed1.jpg" style="width: 100%;" />
-      </div>
-      <div class="mySlides2 fade">
-        <img src="images/bed2.jpg" style="width: 100%;" />
-      </div>
-      <div class="mySlides2 fade">
-        <img src="images/bed3.jpg" style="width: 100%;" />
-      </div>
-
-      <a class="prev" onclick="plusSlides(-1,1)">&#10094;</a>
-      <a class="next" onclick="plusSlides(1,1)">&#10095;</a>
-
-      <div style="text-align: center;" class="radio_button">
-        <span class="dot" onclick="currentSlide(1, 0)"></span>
-        <span class="dot" onclick="currentSlide(2, 1)"></span>
-        <span class="dot" onclick="currentSlide(3, 2)"></span>
-      </div>
-    </div>
-    <br /><!--end of slogan showcase-->
-
-    <!--begining of Premuim features-->
-    <div align="center">
-      <p>Have a Taste of our</p>
-      <h4>Premium Features</h4>
-    </div>
-
-    <!--FILL IN CAROUSEL IMAGES-->
-    <div></div>
-    <!--end of premium features-->
-
-    <!--FAQs-->
-    <div class="container" align="center">
-      <h4>Frequently Asked Questions</h4>
-      <br />
-      <button type="button" class="collapsible">
-        Is there constant supply of internet service
-      </button>
-      <div class="content">
-        <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid,
-          doloribus totam non laborum illo rem delectus voluptas eius hic
-          deleniti libero assumenda corrupti officia minima, et veritatis vel,
-          quidem dolorum.
-        </p>
-      </div>
-      <button type="button" class="collapsible">
-        Is there constant supply of internet service
-      </button>
-      <div class="content">
-        <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid,
-          doloribus totam non laborum illo rem delectus voluptas eius hic
-          deleniti libero assumenda corrupti officia minima, et veritatis vel,
-          quidem dolorum.
-        </p>
-      </div>
-      <button type="button" class="collapsible">
-        Is there constant supply of internet service
-      </button>
-      <div class="content">
-        <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid,
-          doloribus totam non laborum illo rem delectus voluptas eius hic
-          deleniti libero assumenda corrupti officia minima, et veritatis vel,
-          quidem dolorum.
-        </p>
-      </div>
-    </div>
-    <br />
-
-    <!--Ask a question-->
-
-    <h4 align="center">Ask Your Question</h4>
-    <div class="container">
-      <form action="">
-        <label for="fname">Full Name</label>
-        <input
-          type="text"
-          id="form_container"
-          name="firstname"
-          placeholder="Starting with surname eg allbright Hazel"
-        />
-
-        <label for="email">Email</label>
-        <input
-          type="email"
-          id="form_container"
-          name="email"
-          placeholder="example@gmail.com"
-        />
-
-        <label for="question">Question</label>
-        <textarea
-          id="form_container"
-          name="question"
-          placeholder="Type question here"
-          style="height: 100px;"
-        ></textarea>
-
-        <button
-          class="waves-effect waves-light btn"
-          type="submit"
-          id="book_now_button"
-          name=""
-          style="width: 100%;"
-        >
-          Send
-        </button>
-      </form>
-    </div>
-    <!--booking-->
-    <div id="booking">
-      <img class="responsive-img" src="images/bookings.jpg" />
-      <div class="centered">
-        BE TREATED LIKE ROYALTY<br />
-        <span>Have an unforgettable experience</span><br />
-        <a
-          class="waves-effect waves-light btn"
-          id="book_now_button"
-          href="#booking"
-          >BOOK NOW</a
-        >
-      </div>
-    </div>
-
-    <script type="text/javascript" src="js/main.js"></script>
-  </body>
-</html>
-

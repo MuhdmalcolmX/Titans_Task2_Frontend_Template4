@@ -115,6 +115,7 @@ img {
   font-size: 1rem;
   font-weight: normal;
   margin-top: 1rem;
+  padding: 0 0.5rem;
 }
 
 .book-btn {
@@ -125,7 +126,7 @@ img {
   cursor: pointer;
   padding: 1rem 1rem;
   border-radius: 10px;
-  margin: 40px auto;
+  margin: 40px auto 20px auto;
   font-size: 1.5rem;
 }
 
@@ -137,4 +138,51 @@ img {
   display: inline-block;
   position: relative;
   top: 7px;
+}
+
+@media only screen and (max-width: 700px) {
+  .room-section .room-grid-container {
+    display: block;
+  }
+
+  .room-section .room-grid-item {
+    margin-top: 2rem;
+    padding: 2rem 1.6rem;
+    text-align: center;
+    color: #fff;
+  }
+
+  .book-btn {
+    margin: 20px auto 10px auto;
+    font-size: 1.2rem;
+    padding: 0.75rem;
+  }
+
+  .book-btn img {
+    margin-left: 0.5rem;
+    margin-right: 0.4rem;
+    width: 20px;
+    height: 20px;
+    top: 4px;
+  }
+
+  .l-heading {
+    font-size: 2rem;
+    height: 5rem;
+  }
+
+  .showcase-room-rates {
+    height: 50vh;
+  }
+
+  .showcase-room-rates::before {
+    height: 50vh;
+  }
+  .showcase-room-rates .showcase-container {
+    height: 50vh;
+  }
+  .showcase-room-rates .showcase-content-room-rates {
+    padding-bottom: 2.2rem;
+    padding-left: 1rem;
+  }
 }
